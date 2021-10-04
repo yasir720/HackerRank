@@ -86,7 +86,15 @@ func main() {
 	// p := peePee(b)
 	// fmt.Println(p)
 
-	pooPoo(4, "abbcccdddd")
+	//pooPoo(4, "abbcccdddd")
+
+	fmt.Println(5/2)
+	fmt.Println(9/2)
+	y := 11.999/2
+	fmt.Println(y)
+	fmt.Println(int(y))
+
+
 
 
 }
