@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+)
 
 func peePee(queries [][]int32) []int32 {
 	// for _, query := range queries {
@@ -88,11 +92,16 @@ func main() {
 
 	//pooPoo(4, "abbcccdddd")
 
-	fmt.Println(5/2)
-	fmt.Println(9/2)
-	y := 11.999/2
-	fmt.Println(y)
-	fmt.Println(int(y))
+	// fmt.Println(5/2)
+	// fmt.Println(9/2)
+	// y := 11.999/2
+	// fmt.Println(y)
+	// fmt.Println(int(y))
+
+reader := bufio.NewReader(os.Stdin)
+fmt.Print("Enter text: ")
+text, _ := reader.ReadString('\n')
+fmt.Println(text)
 
 
 
