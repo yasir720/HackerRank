@@ -25,8 +25,7 @@ func stepPerms(n int32) int32 {
 
     m[1] = 1
     m[2] = 2
-    m[3] = 4
-    
+    m[3] = 4    
 
     inner = func(b int32) int32 {
         _, doneBefore := m[b]
@@ -37,12 +36,10 @@ func stepPerms(n int32) int32 {
 
         m[b] = inner(b-1) + inner(b-2) + inner(b-3)
         return m[b]
-
     }
 
     m[n] = inner(n)
     return m[n]
-
 }
 
 func main() {
