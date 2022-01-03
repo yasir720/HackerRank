@@ -2,13 +2,20 @@ package main
 
 import "fmt"
 
+func alternatingCharacters(s string) int32 {
+    // Write your code here
+	numOfDeletions := 0
+
+	for i := 0; i < len(s); i++ {
+		if s[i] == s[i + 1] {
+			numOfDeletions++
+		}
+	}
+
+}
+
 func main() {
 	// for i := 0; i < 3; i++ {
-	//     fmt.Println("Enter text: ")
-	//     var input string
-	//     fmt.Scanln(&input)
-	//     fmt.Println(string(input[1]))
-	//     fmt.Println(input)
 	// }
 
 	s := make([]int, 5)

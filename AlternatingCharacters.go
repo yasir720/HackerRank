@@ -31,8 +31,23 @@ func alternatingCharacters(s string) int32 {
         lastLetter = letter
     }
     return numOfDeletations
-
 }
+
+/*
+ * Alternate answer
+ */
+
+//  func alternatingCharacters(s string) int32 {
+//     // Write your code here
+//     var numOfDeletions int32 = 0
+
+//     for i := 0; i < len(s) -1; i++ {
+//         if s[i] == s[i + 1] {
+//             numOfDeletions++
+//         }
+//     }
+//     return numOfDeletions
+// }
 
 func main() {
     reader := bufio.NewReaderSize(os.Stdin, 16 * 1024 * 1024)
