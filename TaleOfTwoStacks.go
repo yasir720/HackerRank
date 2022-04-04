@@ -62,6 +62,7 @@ func main() {
 	for i := 0; i < 4; i++ {
 		SusQueue(1, i)
 	}
+	SusQueue(3, 0)
 	
 	
 	//fmt.Println(isBalanced("{}"))
